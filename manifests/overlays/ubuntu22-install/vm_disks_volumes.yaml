@@ -17,10 +17,10 @@ spec:
             cdrom:
               bus: sata
               readonly: true
-          - name: linuxsoftwaredrviso
-            cdrom:
-              bus: sata
-              readonly: true
+          # - name: linuxsoftwaredrviso
+          #   cdrom:
+          #     bus: sata
+          #     readonly: true
       volumes:
       - name: bootdisk
         persistentVolumeClaim:
@@ -29,8 +29,4 @@ spec:
       - name: cdromiso
         containerDisk:
           image: gar-registry.caas.intel.com/edgecloud-ecosystem-enabling/ubuntu22-iso-cdisk
-          imagePullPolicy: IfNotPresent
-      - name: linuxsoftwaredrviso
-        containerDisk:
-          image: gar-registry.caas.intel.com/edgecloud-ecosystem-enabling/linux-softwaredrv-iso-cdisk
           imagePullPolicy: IfNotPresent
