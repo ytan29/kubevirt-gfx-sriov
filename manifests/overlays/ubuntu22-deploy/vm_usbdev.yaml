@@ -1,0 +1,6 @@
+- op: add
+  path: /spec/template/spec/domain/devices/usbs
+  value:
+    - name: usbdev
+      deviceName: "generic.com/hid-mouse"
+      busDev: "001/002"

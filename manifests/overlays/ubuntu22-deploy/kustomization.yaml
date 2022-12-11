@@ -19,7 +19,13 @@ patchesJson6902:
       version: v1      
       kind: VirtualMachine
       name: vm
-  - path: vm_sriov_gpudev.yaml
+  # - path: vm_sriov_gpudev.yaml
+  #   target:
+  #     group: kubevirt.io
+  #     version: v1      
+  #     kind: VirtualMachine
+  #     name: vm
+  - path: vm_usbdev.yaml
     target:
       group: kubevirt.io
       version: v1      
